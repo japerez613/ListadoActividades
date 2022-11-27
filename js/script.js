@@ -28,7 +28,8 @@ document.getElementById('registrar').onclick = function()
         </button>
         </div>
         `;
-
+        
+        //variable para eliminar un registro
         var actualTarea = document.querySelectorAll('.delete');
 
         for(var i = 0; i < actualTarea.length; i++)
@@ -38,7 +39,8 @@ document.getElementById('registrar').onclick = function()
                 this.parentNode.remove();
             }
         }
-
+        
+        //variable para tablar una tarea
         var tareas = document.querySelectorAll('.tareas');
 
         for(var j = 0; j < tareas.length; j++)
