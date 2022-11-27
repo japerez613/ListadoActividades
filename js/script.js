@@ -1,6 +1,7 @@
 //validar si el input esta vacio
 document.getElementById('registrar').onclick = function()
 {
+    //valida si el usuario ingresa valor vacio
     if(document.querySelector('#caja1 input').value.length == 0)
     {
         Swal.fire(
@@ -16,6 +17,7 @@ document.getElementById('registrar').onclick = function()
             'Se registro la tarea.',
             'success'
           );
+        //coloca el registro 
         document.querySelector('#tareas').innerHTML
         += `<div class="tareas">
         <span id="nombreTarea">
@@ -51,7 +53,7 @@ document.getElementById('registrar').onclick = function()
                   );
             }
         }
-
+        //Al hacer clic coloca la caja de texto en vacio
         document.querySelector('#caja1 input').value = '';
     }
 }
