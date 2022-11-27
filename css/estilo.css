@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body
+{
+    height: 100vh;
+    background-color: turquoise;
+
+}
+
+.container
+{
+    border: 2px solid white;
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 30px 40px;
+}
+#caja1
+{
+    position: relative;
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px gray;
+}
+#caja1 input
+{
+    width: 70%;
+    width: 70%;
+    height: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    border: 2px solid gray;
+    padding: 12px;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+}
+
+#caja1 input:focus
+{
+    outline: none;
+    border-color: palevioletred;
+}
+
+#caja1 button
+{
+    position: relative;
+    float: right;
+    width: 25%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: rgb(40, 103, 220);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+
+#tareas
+{
+    background-color: #ffff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px blue;
+    width: 100%;
+    position: relative;
+}
+.tareas
+{
+    background-color: white;
+    height: 50px;
+   padding: 5px 10px;
+   margin-top: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 2px solid gray;
+   cursor: pointer;
+}
+.tareas span
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.tareas button
+{
+    background-color: azure;
+    color: red;
+    border: none;
+    width: 40px;
+    height: 100%;
+    cursor: pointer;
+}
+.completo
+{
+    text-decoration: line-through;
+    color: red;
+}
+
